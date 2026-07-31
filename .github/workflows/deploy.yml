@@ -20,17 +20,17 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version: 20
 
-      - run: npm install
+      - run: npm ci || npm install
 
       - run: npm run build
         env:
           VITE_NASA_API_KEY: ${{ secrets.VITE_NASA_API_KEY }}
 
-      - uses: actions/configure-pages@v4
+      - uses: actions/configure-pages@v5
 
-      - uses: actions/upload-pages-artifact@v4
+      - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
 
