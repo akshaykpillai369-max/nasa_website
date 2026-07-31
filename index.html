@@ -22,6 +22,10 @@
               <input type="date" id="select_date" class="form-control form-control-dark w-auto">
 
               <button id="btn-random" class="btn btn-outline-info">🎲 Random Picture</button>
+
+              <button id="btn-view-favs" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#favsModal">
+                ⭐ Saved (<span id="fav-count">0</span>)
+              </button>
             </div>
           </div>  
           </div>
@@ -33,9 +37,27 @@
   </div>
    </main>
 
-     
+
+<div class="modal fade" id="favsModal" tabindex="-1" aria-labelledby="favsModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xl modal-dialog-scrollable">
+        <div class="modal-content bg-dark text-white border-secondary">
+          <div class="modal-header border-secondary">
+            <h5 class="modal-title font-orbitron" id="favsModalLabel">⭐ Favorite Discoveries</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row g-3" id="favorites-grid">
+              <p class="text-center text-muted">No favorites saved yet!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
     <script type="module" src="/src/assets/main.js"></script>
+
   </body>
 </html> 
