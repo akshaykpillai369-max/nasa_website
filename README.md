@@ -14,6 +14,10 @@ A sleek, responsive web application built with **Vite** and **Vanilla JavaScript
  
 * 2.  Mobile-friendly layout (Responsive design).
  
+* 3.  Able to navigate to previous dates to see the image of that day.
+    
+* 4. Able to select a random date and show the image of that day  
+ 
 
 ## Tech Stack
 
